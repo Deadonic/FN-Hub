@@ -22,10 +22,12 @@ local UIGradient_5 = Instance.new("UIGradient")
 local ThingTitle = Instance.new("TextLabel")
 local Other_3 = Instance.new("Frame")
 local Exploits = Instance.new("Folder")
-local DltTools = Instance.new("TextButton")
-local GetAllGunsTitle = Instance.new("TextLabel")
 local GetAllTools = Instance.new("TextButton")
+local GetAllGunsTitle = Instance.new("TextLabel")
+local DltTools = Instance.new("TextButton")
 local GetAllGunsTitle_2 = Instance.new("TextLabel")
+local NoWanted = Instance.new("TextButton")
+local GetAllGunsTitle_3 = Instance.new("TextLabel")
 local ServerHax = Instance.new("Frame")
 local Other_4 = Instance.new("Frame")
 local UIGradient_6 = Instance.new("UIGradient")
@@ -172,31 +174,6 @@ Other_3.Size = UDim2.new(0, 72, 0, 1)
 Exploits.Name = "Exploits"
 Exploits.Parent = LocalHax
 
-DltTools.Name = "DltTools"
-DltTools.Parent = Exploits
-DltTools.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-DltTools.Position = UDim2.new(0.0201005042, 0, 0.105635919, 0)
-DltTools.Size = UDim2.new(0, 16, 0, 16)
-DltTools.Font = Enum.Font.SourceSans
-DltTools.Text = " "
-DltTools.TextColor3 = Color3.fromRGB(0, 0, 0)
-DltTools.TextScaled = true
-DltTools.TextSize = 14.000
-DltTools.TextWrapped = true
-
-GetAllGunsTitle.Name = "GetAllGunsTitle"
-GetAllGunsTitle.Parent = DltTools
-GetAllGunsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GetAllGunsTitle.BackgroundTransparency = 1.000
-GetAllGunsTitle.Position = UDim2.new(-0.66936028, 0, -0.0215951167, 0)
-GetAllGunsTitle.Size = UDim2.new(0, 160, 0, 16)
-GetAllGunsTitle.Font = Enum.Font.Code
-GetAllGunsTitle.Text = "Delete Tools"
-GetAllGunsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-GetAllGunsTitle.TextScaled = true
-GetAllGunsTitle.TextSize = 14.000
-GetAllGunsTitle.TextWrapped = true
-
 GetAllTools.Name = "GetAllTools"
 GetAllTools.Parent = Exploits
 GetAllTools.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
@@ -209,18 +186,68 @@ GetAllTools.TextScaled = true
 GetAllTools.TextSize = 14.000
 GetAllTools.TextWrapped = true
 
+GetAllGunsTitle.Name = "GetAllGunsTitle"
+GetAllGunsTitle.Parent = GetAllTools
+GetAllGunsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle.BackgroundTransparency = 1.000
+GetAllGunsTitle.Position = UDim2.new(-0.04436028, 0, -0.0215951167, 0)
+GetAllGunsTitle.Size = UDim2.new(0, 160, 0, 16)
+GetAllGunsTitle.Font = Enum.Font.Code
+GetAllGunsTitle.Text = "Fetch All Tools"
+GetAllGunsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle.TextScaled = true
+GetAllGunsTitle.TextSize = 14.000
+GetAllGunsTitle.TextWrapped = true
+
+DltTools.Name = "DltTools"
+DltTools.Parent = Exploits
+DltTools.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+DltTools.Position = UDim2.new(0.0201005042, 0, 0.105635919, 0)
+DltTools.Size = UDim2.new(0, 16, 0, 16)
+DltTools.Font = Enum.Font.SourceSans
+DltTools.Text = " "
+DltTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+DltTools.TextScaled = true
+DltTools.TextSize = 14.000
+DltTools.TextWrapped = true
+
 GetAllGunsTitle_2.Name = "GetAllGunsTitle"
-GetAllGunsTitle_2.Parent = GetAllTools
+GetAllGunsTitle_2.Parent = DltTools
 GetAllGunsTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GetAllGunsTitle_2.BackgroundTransparency = 1.000
-GetAllGunsTitle_2.Position = UDim2.new(-0.04436028, 0, -0.0215951167, 0)
+GetAllGunsTitle_2.Position = UDim2.new(-0.66936028, 0, -0.0215951167, 0)
 GetAllGunsTitle_2.Size = UDim2.new(0, 160, 0, 16)
 GetAllGunsTitle_2.Font = Enum.Font.Code
-GetAllGunsTitle_2.Text = "Fetch All Tools"
+GetAllGunsTitle_2.Text = "Delete Tools"
 GetAllGunsTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 GetAllGunsTitle_2.TextScaled = true
 GetAllGunsTitle_2.TextSize = 14.000
 GetAllGunsTitle_2.TextWrapped = true
+
+NoWanted.Name = "NoWanted"
+NoWanted.Parent = Exploits
+NoWanted.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+NoWanted.Position = UDim2.new(0.0199999996, 0, 0.170000002, 0)
+NoWanted.Size = UDim2.new(0, 16, 0, 16)
+NoWanted.Font = Enum.Font.SourceSans
+NoWanted.Text = " "
+NoWanted.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoWanted.TextScaled = true
+NoWanted.TextSize = 14.000
+NoWanted.TextWrapped = true
+
+GetAllGunsTitle_3.Name = "GetAllGunsTitle"
+GetAllGunsTitle_3.Parent = NoWanted
+GetAllGunsTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle_3.BackgroundTransparency = 1.000
+GetAllGunsTitle_3.Position = UDim2.new(-0.66936028, 0, -0.0215951167, 0)
+GetAllGunsTitle_3.Size = UDim2.new(0, 160, 0, 16)
+GetAllGunsTitle_3.Font = Enum.Font.Code
+GetAllGunsTitle_3.Text = "No Wanted"
+GetAllGunsTitle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle_3.TextScaled = true
+GetAllGunsTitle_3.TextSize = 14.000
+GetAllGunsTitle_3.TextWrapped = true
 
 ServerHax.Name = "ServerHax"
 ServerHax.Parent = Main
@@ -290,13 +317,13 @@ ReactorTitle.TextWrapped = true
 
 -- Scripts:
 
-local function YRXE_fake_script() -- FN.Namer 
+local function WYJQ_fake_script() -- FN.Namer 
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
 end
-coroutine.wrap(YRXE_fake_script)()
-local function GIXVYL_fake_script() -- Main.Drag 
+coroutine.wrap(WYJQ_fake_script)()
+local function NKSVQSB_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -337,29 +364,8 @@ local function GIXVYL_fake_script() -- Main.Drag
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(GIXVYL_fake_script)()
-local function ORHIR_fake_script() -- DltTools.GuiClick_Script 
-	local script = Instance.new('LocalScript', DltTools)
-
-	function OnClicked() 
-		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
-		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-			v:Destroy()
-		end
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Deleted Tools";
-			Text = "Tools from backpack have been deleted.";
-			Icon = "http://www.roblox.com/asset/?id=84645430";
-			Duration = "0.3";
-		})
-		wait(0.5)
-		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-end
-coroutine.wrap(ORHIR_fake_script)()
-local function OIAZ_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(NKSVQSB_fake_script)()
+local function JRXMH_fake_script() -- GetAllTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -379,8 +385,48 @@ local function OIAZ_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(OIAZ_fake_script)()
-local function KHMDCC_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(JRXMH_fake_script)()
+local function GFPV_fake_script() -- DltTools.GuiClick_Script 
+	local script = Instance.new('LocalScript', DltTools)
+
+	function OnClicked() 
+		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			v:Destroy()
+		end
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Deleted Tools";
+			Text = "Tools from backpack have been deleted.";
+			Icon = "http://www.roblox.com/asset/?id=84645430";
+			Duration = "0.3";
+		})
+		wait(0.5)
+		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(GFPV_fake_script)()
+local function KQPMJEC_fake_script() -- NoWanted.GuiClick_Script 
+	local script = Instance.new('LocalScript', NoWanted)
+
+	function OnClicked() 
+		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
+		game.Players.LocalPlayer.PlayerValues.Wanted.Value = false
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Wanted Removed";
+			Text = "Wanted has been taken away from you.";
+			Icon = "http://www.roblox.com/asset/?id=84645430";
+			Duration = "0.3";
+		})
+		wait(0.5)
+		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(KQPMJEC_fake_script)()
+local function HIYT_fake_script() -- TeleportToReactor.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -418,8 +464,8 @@ local function KHMDCC_fake_script() -- TeleportToReactor.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(KHMDCC_fake_script)()
-local function SCGXY_fake_script() -- FN.Notify 
+coroutine.wrap(HIYT_fake_script)()
+local function BUYTVD_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
 
 	
@@ -435,4 +481,4 @@ local function SCGXY_fake_script() -- FN.Notify
 	script.Parent.Main.Visible = true
 	
 end
-coroutine.wrap(SCGXY_fake_script)()
+coroutine.wrap(BUYTVD_fake_script)()
