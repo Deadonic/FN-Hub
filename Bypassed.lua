@@ -28,6 +28,8 @@ local DltTools = Instance.new("TextButton")
 local GetAllGunsTitle_2 = Instance.new("TextLabel")
 local NoWanted = Instance.new("TextButton")
 local GetAllGunsTitle_3 = Instance.new("TextLabel")
+local AddWanted = Instance.new("TextButton")
+local GetAllGunsTitle_4 = Instance.new("TextLabel")
 local ServerHax = Instance.new("Frame")
 local Other_4 = Instance.new("Frame")
 local UIGradient_6 = Instance.new("UIGradient")
@@ -36,6 +38,8 @@ local Other_5 = Instance.new("Frame")
 local Exploits_2 = Instance.new("Folder")
 local TeleportToReactor = Instance.new("TextButton")
 local ReactorTitle = Instance.new("TextLabel")
+local TeleportToCardAccepter = Instance.new("TextButton")
+local ReactorTitle_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -249,6 +253,31 @@ GetAllGunsTitle_3.TextScaled = true
 GetAllGunsTitle_3.TextSize = 14.000
 GetAllGunsTitle_3.TextWrapped = true
 
+AddWanted.Name = "AddWanted"
+AddWanted.Parent = Exploits
+AddWanted.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+AddWanted.Position = UDim2.new(0.0199999996, 0, 0.230000004, 0)
+AddWanted.Size = UDim2.new(0, 16, 0, 16)
+AddWanted.Font = Enum.Font.SourceSans
+AddWanted.Text = " "
+AddWanted.TextColor3 = Color3.fromRGB(0, 0, 0)
+AddWanted.TextScaled = true
+AddWanted.TextSize = 14.000
+AddWanted.TextWrapped = true
+
+GetAllGunsTitle_4.Name = "GetAllGunsTitle"
+GetAllGunsTitle_4.Parent = AddWanted
+GetAllGunsTitle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle_4.BackgroundTransparency = 1.000
+GetAllGunsTitle_4.Position = UDim2.new(-0.66936028, 0, -0.0215951167, 0)
+GetAllGunsTitle_4.Size = UDim2.new(0, 160, 0, 16)
+GetAllGunsTitle_4.Font = Enum.Font.Code
+GetAllGunsTitle_4.Text = "Add Wanted"
+GetAllGunsTitle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAllGunsTitle_4.TextScaled = true
+GetAllGunsTitle_4.TextSize = 14.000
+GetAllGunsTitle_4.TextWrapped = true
+
 ServerHax.Name = "ServerHax"
 ServerHax.Parent = Main
 ServerHax.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
@@ -315,15 +344,40 @@ ReactorTitle.TextScaled = true
 ReactorTitle.TextSize = 14.000
 ReactorTitle.TextWrapped = true
 
+TeleportToCardAccepter.Name = "TeleportToCardAccepter"
+TeleportToCardAccepter.Parent = Exploits_2
+TeleportToCardAccepter.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+TeleportToCardAccepter.Position = UDim2.new(0.0199999996, 0, 0.105999999, 0)
+TeleportToCardAccepter.Size = UDim2.new(0, 16, 0, 16)
+TeleportToCardAccepter.Font = Enum.Font.SourceSans
+TeleportToCardAccepter.Text = " "
+TeleportToCardAccepter.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToCardAccepter.TextScaled = true
+TeleportToCardAccepter.TextSize = 14.000
+TeleportToCardAccepter.TextWrapped = true
+
+ReactorTitle_2.Name = "ReactorTitle"
+ReactorTitle_2.Parent = TeleportToCardAccepter
+ReactorTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_2.BackgroundTransparency = 1.000
+ReactorTitle_2.Position = UDim2.new(0.95563972, 0, -0.0215951167, 0)
+ReactorTitle_2.Size = UDim2.new(0, 160, 0, 16)
+ReactorTitle_2.Font = Enum.Font.Code
+ReactorTitle_2.Text = "Teleport To Staff Accept"
+ReactorTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_2.TextScaled = true
+ReactorTitle_2.TextSize = 14.000
+ReactorTitle_2.TextWrapped = true
+
 -- Scripts:
 
-local function WYJQ_fake_script() -- FN.Namer 
+local function OYEOYJ_fake_script() -- FN.Namer 
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
 end
-coroutine.wrap(WYJQ_fake_script)()
-local function NKSVQSB_fake_script() -- Main.Drag 
+coroutine.wrap(OYEOYJ_fake_script)()
+local function PBMU_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -364,8 +418,8 @@ local function NKSVQSB_fake_script() -- Main.Drag
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(NKSVQSB_fake_script)()
-local function JRXMH_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(PBMU_fake_script)()
+local function MYLE_fake_script() -- GetAllTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -385,8 +439,8 @@ local function JRXMH_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(JRXMH_fake_script)()
-local function GFPV_fake_script() -- DltTools.GuiClick_Script 
+coroutine.wrap(MYLE_fake_script)()
+local function RODINH_fake_script() -- DltTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', DltTools)
 
 	function OnClicked() 
@@ -406,8 +460,8 @@ local function GFPV_fake_script() -- DltTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(GFPV_fake_script)()
-local function KQPMJEC_fake_script() -- NoWanted.GuiClick_Script 
+coroutine.wrap(RODINH_fake_script)()
+local function PZLENR_fake_script() -- NoWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', NoWanted)
 
 	function OnClicked() 
@@ -425,8 +479,27 @@ local function KQPMJEC_fake_script() -- NoWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(KQPMJEC_fake_script)()
-local function HIYT_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(PZLENR_fake_script)()
+local function NRMUV_fake_script() -- AddWanted.GuiClick_Script 
+	local script = Instance.new('LocalScript', AddWanted)
+
+	function OnClicked() 
+		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
+		game.Players.LocalPlayer.PlayerValues.Wanted.Value = false
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Wanted Added";
+			Text = "Wanted has been Added to you.";
+			Icon = "http://www.roblox.com/asset/?id=84645430";
+			Duration = "0.3";
+		})
+		wait(0.5)
+		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(NRMUV_fake_script)()
+local function VTUF_fake_script() -- TeleportToReactor.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -464,8 +537,47 @@ local function HIYT_fake_script() -- TeleportToReactor.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(HIYT_fake_script)()
-local function BUYTVD_fake_script() -- FN.Notify 
+coroutine.wrap(VTUF_fake_script)()
+local function RMFPV_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
+	local script = Instance.new('LocalScript', TeleportToCardAccepter)
+
+	function OnClicked() 
+		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
+		local TweenService = game:GetService("TweenService") 
+		local tweenPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+	
+		local info = TweenInfo.new(
+			5,        
+			Enum.EasingStyle.Cubic,    
+			Enum.EasingDirection.InOut,   
+			0,                  
+			false,               
+			0                  
+		)
+	
+		local Goals = {           
+			CFrame = CFrame.new(626.81,180.7,-346.45);
+	
+	
+		}
+	
+		local PartTween = TweenService:Create(tweenPart, info, Goals)
+		PartTween:Play()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Flying";
+			Text = "Going to Staff Card room with bypassed tp";
+			Icon = "http://www.roblox.com/asset/?id=84645430";
+			Duration = "0.3";
+		})
+		wait(1.5)
+		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+		
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(RMFPV_fake_script)()
+local function WAXR_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
 
 	
@@ -481,4 +593,4 @@ local function BUYTVD_fake_script() -- FN.Notify
 	script.Parent.Main.Visible = true
 	
 end
-coroutine.wrap(BUYTVD_fake_script)()
+coroutine.wrap(WAXR_fake_script)()
