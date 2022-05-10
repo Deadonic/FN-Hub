@@ -371,13 +371,13 @@ ReactorTitle_2.TextWrapped = true
 
 -- Scripts:
 
-local function OYEOYJ_fake_script() -- FN.Namer 
+local function VCSAVQ_fake_script() -- FN.Namer 
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
 end
-coroutine.wrap(OYEOYJ_fake_script)()
-local function PBMU_fake_script() -- Main.Drag 
+coroutine.wrap(VCSAVQ_fake_script)()
+local function UUVZG_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -418,8 +418,8 @@ local function PBMU_fake_script() -- Main.Drag
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(PBMU_fake_script)()
-local function MYLE_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(UUVZG_fake_script)()
+local function CTRKA_fake_script() -- GetAllTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -439,8 +439,8 @@ local function MYLE_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(MYLE_fake_script)()
-local function RODINH_fake_script() -- DltTools.GuiClick_Script 
+coroutine.wrap(CTRKA_fake_script)()
+local function RUEJ_fake_script() -- DltTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', DltTools)
 
 	function OnClicked() 
@@ -460,8 +460,8 @@ local function RODINH_fake_script() -- DltTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(RODINH_fake_script)()
-local function PZLENR_fake_script() -- NoWanted.GuiClick_Script 
+coroutine.wrap(RUEJ_fake_script)()
+local function GMGALP_fake_script() -- NoWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', NoWanted)
 
 	function OnClicked() 
@@ -479,13 +479,13 @@ local function PZLENR_fake_script() -- NoWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(PZLENR_fake_script)()
-local function NRMUV_fake_script() -- AddWanted.GuiClick_Script 
+coroutine.wrap(GMGALP_fake_script)()
+local function CJVWUP_fake_script() -- AddWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', AddWanted)
 
 	function OnClicked() 
 		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
-		game.Players.LocalPlayer.PlayerValues.Wanted.Value = false
+		game.Players.LocalPlayer.PlayerValues.Wanted.Value = true
 		game.StarterGui:SetCore("SendNotification", {
 			Title = "Wanted Added";
 			Text = "Wanted has been Added to you.";
@@ -498,8 +498,8 @@ local function NRMUV_fake_script() -- AddWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(NRMUV_fake_script)()
-local function VTUF_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(CJVWUP_fake_script)()
+local function NXGNHU_fake_script() -- TeleportToReactor.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -537,8 +537,8 @@ local function VTUF_fake_script() -- TeleportToReactor.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(VTUF_fake_script)()
-local function RMFPV_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
+coroutine.wrap(NXGNHU_fake_script)()
+local function OXLQRN_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToCardAccepter)
 
 	function OnClicked() 
@@ -576,8 +576,8 @@ local function RMFPV_fake_script() -- TeleportToCardAccepter.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(RMFPV_fake_script)()
-local function WAXR_fake_script() -- FN.Notify 
+coroutine.wrap(OXLQRN_fake_script)()
+local function XTRV_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
 
 	
@@ -593,4 +593,4 @@ local function WAXR_fake_script() -- FN.Notify
 	script.Parent.Main.Visible = true
 	
 end
-coroutine.wrap(WAXR_fake_script)()
+coroutine.wrap(XTRV_fake_script)()
