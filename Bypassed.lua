@@ -74,7 +74,7 @@ FN.Name = "FN"
 FN.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 FN.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 FN.ResetOnSpawn = false
-
+FN.Enabled = true
 Main.Name = "Main"
 Main.Parent = FN
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
