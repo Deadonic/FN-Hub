@@ -1,10 +1,8 @@
---[[
-Actually updated!
-almost done
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
-
-]]
 local FN = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -55,6 +53,20 @@ local TeleportToMiddle = Instance.new("TextButton")
 local ReactorTitle_3 = Instance.new("TextLabel")
 local TeleportToSCP = Instance.new("TextButton")
 local ReactorTitle_4 = Instance.new("TextLabel")
+local PlayerHax = Instance.new("Frame")
+local Other_5 = Instance.new("Frame")
+local UIGradient_10 = Instance.new("UIGradient")
+local ThingTitle_3 = Instance.new("TextLabel")
+local Other_6 = Instance.new("Frame")
+local Exploits_3 = Instance.new("Folder")
+local Level = Instance.new("TextBox")
+local ReactorTitle_5 = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Speed = Instance.new("TextBox")
+local ReactorTitle_6 = Instance.new("TextLabel")
+local UIGradient_12 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
@@ -509,15 +521,125 @@ ReactorTitle_4.TextScaled = true
 ReactorTitle_4.TextSize = 14.000
 ReactorTitle_4.TextWrapped = true
 
+PlayerHax.Name = "PlayerHax"
+PlayerHax.Parent = Main
+PlayerHax.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+PlayerHax.BorderSizePixel = 3
+PlayerHax.Position = UDim2.new(0.506596148, 0, 0.679538071, 0)
+PlayerHax.Size = UDim2.new(0, 199, 0, 200)
+
+Other_5.Name = "Other"
+Other_5.Parent = PlayerHax
+Other_5.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_5.BorderSizePixel = 0
+Other_5.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
+Other_5.Size = UDim2.new(0, 11, 0, 1)
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Rotation = 90
+UIGradient_10.Parent = PlayerHax
+
+ThingTitle_3.Name = "ThingTitle"
+ThingTitle_3.Parent = PlayerHax
+ThingTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_3.BackgroundTransparency = 1.000
+ThingTitle_3.Position = UDim2.new(0.048290465, 0, -0.0383471921, 0)
+ThingTitle_3.Size = UDim2.new(0, 132, 0, 16)
+ThingTitle_3.Font = Enum.Font.Code
+ThingTitle_3.Text = "Player Exploits"
+ThingTitle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_3.TextScaled = true
+ThingTitle_3.TextSize = 14.000
+ThingTitle_3.TextWrapped = true
+
+Other_6.Name = "Other"
+Other_6.Parent = PlayerHax
+Other_6.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_6.BorderSizePixel = 0
+Other_6.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
+Other_6.Size = UDim2.new(0, 72, 0, 1)
+
+Exploits_3.Name = "Exploits"
+Exploits_3.Parent = PlayerHax
+
+Level.Name = "Level"
+Level.Parent = Exploits_3
+Level.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Level.BorderSizePixel = 3
+Level.Position = UDim2.new(0.0653266311, 0, 0.623749971, 0)
+Level.Size = UDim2.new(0, 173, 0, 43)
+Level.Font = Enum.Font.Code
+Level.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Level.Text = ""
+Level.TextColor3 = Color3.fromRGB(167, 255, 157)
+Level.TextScaled = true
+Level.TextSize = 14.000
+Level.TextWrapped = true
+
+ReactorTitle_5.Name = "ReactorTitle"
+ReactorTitle_5.Parent = Level
+ReactorTitle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_5.BackgroundTransparency = 1.000
+ReactorTitle_5.Position = UDim2.new(0.0323738083, 0, -0.391362578, 0)
+ReactorTitle_5.Size = UDim2.new(0, 160, 0, 16)
+ReactorTitle_5.Font = Enum.Font.Code
+ReactorTitle_5.Text = "Level"
+ReactorTitle_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_5.TextScaled = true
+ReactorTitle_5.TextSize = 14.000
+ReactorTitle_5.TextWrapped = true
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Rotation = 90
+UIGradient_11.Parent = Level
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Level
+
+Speed.Name = "Speed"
+Speed.Parent = Exploits_3
+Speed.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Speed.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Speed.BorderSizePixel = 3
+Speed.Position = UDim2.new(0.0653266311, 0, 0.263749987, 0)
+Speed.Size = UDim2.new(0, 173, 0, 43)
+Speed.Font = Enum.Font.Code
+Speed.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(167, 255, 157)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+ReactorTitle_6.Name = "ReactorTitle"
+ReactorTitle_6.Parent = Speed
+ReactorTitle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_6.BackgroundTransparency = 1.000
+ReactorTitle_6.Position = UDim2.new(0.0323738083, 0, -0.391362578, 0)
+ReactorTitle_6.Size = UDim2.new(0, 160, 0, 16)
+ReactorTitle_6.Font = Enum.Font.Code
+ReactorTitle_6.Text = "WalkSpeed"
+ReactorTitle_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReactorTitle_6.TextScaled = true
+ReactorTitle_6.TextSize = 14.000
+ReactorTitle_6.TextWrapped = true
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_12.Rotation = 90
+UIGradient_12.Parent = Speed
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Speed
+
 -- Scripts:
 
-local function IGKFI_fake_script() -- FN.Namer 
+local function OVMTBJA_fake_script() -- FN.Namer 
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
 end
-coroutine.wrap(IGKFI_fake_script)()
-local function OADC_fake_script() -- Main.Drag 
+coroutine.wrap(OVMTBJA_fake_script)()
+local function VIIFS_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -558,8 +680,14 @@ local function OADC_fake_script() -- Main.Drag
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(OADC_fake_script)()
-local function LBXY_fake_script() -- MainGame.GuiClick_Script 
+coroutine.wrap(VIIFS_fake_script)()
+local function JKLFQNZ_fake_script() -- Hub.LocalScript 
+	local script = Instance.new('LocalScript', Hub)
+
+	script.Parent.Text = "Hub V"..script.Parent.Parent.Parent.Parent.Version.Value..""
+end
+coroutine.wrap(JKLFQNZ_fake_script)()
+local function GJKV_fake_script() -- MainGame.GuiClick_Script 
 	local script = Instance.new('LocalScript', MainGame)
 
 	function OnClicked() 
@@ -567,18 +695,31 @@ local function LBXY_fake_script() -- MainGame.GuiClick_Script
 		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
 		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
+		script.Parent.Parent.Parent.ServerHax.Visible = false
+		script.Parent.Parent.Parent.LocalHax.Visible = false
+		script.Parent.Parent.Parent.PlayerHax.Visible = false
+		wait(0)
+	
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
 		script.Parent.Parent.Parent.ServerHax.Visible = true
 		script.Parent.Parent.Parent.LocalHax.Visible = true
-		wait(0)
-		
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
-		
+		script.Parent.Parent.Parent.PlayerHax.Visible = true
+	
 	end 
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
+	script.Parent.MouseMoved:Connect(function()
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
+		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
+		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
+		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
+		wait(0)
+	
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
+	end)
 end
-coroutine.wrap(LBXY_fake_script)()
-local function LZXS_fake_script() -- ESP.GuiClick_Script 
+coroutine.wrap(GJKV_fake_script)()
+local function YVNOT_fake_script() -- ESP.GuiClick_Script 
 	local script = Instance.new('LocalScript', ESP)
 
 	function OnClicked() 
@@ -588,6 +729,7 @@ local function LZXS_fake_script() -- ESP.GuiClick_Script
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
 		script.Parent.Parent.Parent.ServerHax.Visible = false
 		script.Parent.Parent.Parent.LocalHax.Visible = false
+		script.Parent.Parent.Parent.PlayerHax.Visible = false
 		wait(0)
 		
 		script.Parent.Parent.ESPUnder.BackgroundTransparency = 0
@@ -595,9 +737,18 @@ local function LZXS_fake_script() -- ESP.GuiClick_Script
 	end 
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
+	script.Parent.MouseMoved:Connect(function()
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
+		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
+		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
+		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
+		wait(0)
+	
+		script.Parent.Parent.ESPUnder.BackgroundTransparency = 0
+	end)
 end
-coroutine.wrap(LZXS_fake_script)()
-local function LOTHGL_fake_script() -- Aimbot.GuiClick_Script 
+coroutine.wrap(YVNOT_fake_script)()
+local function OVXGINP_fake_script() -- Aimbot.GuiClick_Script 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	function OnClicked() 
@@ -607,16 +758,26 @@ local function LOTHGL_fake_script() -- Aimbot.GuiClick_Script
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
 		script.Parent.Parent.Parent.ServerHax.Visible = false
 		script.Parent.Parent.Parent.LocalHax.Visible = false
+		script.Parent.Parent.Parent.PlayerHax.Visible = false
 		wait(0)
-		
+	
 		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 0
-		
+	
 	end 
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
+	script.Parent.MouseMoved:Connect(function()
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
+		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
+		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
+		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
+		wait(0)
+	
+		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 0
+	end)
 end
-coroutine.wrap(LOTHGL_fake_script)()
-local function BRBGHLJ_fake_script() -- Misc.GuiClick_Script 
+coroutine.wrap(OVXGINP_fake_script)()
+local function WZRXL_fake_script() -- Misc.GuiClick_Script 
 	local script = Instance.new('LocalScript', Misc)
 
 	function OnClicked() 
@@ -626,16 +787,26 @@ local function BRBGHLJ_fake_script() -- Misc.GuiClick_Script
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
 		script.Parent.Parent.Parent.ServerHax.Visible = false
 		script.Parent.Parent.Parent.LocalHax.Visible = false
+		script.Parent.Parent.Parent.PlayerHax.Visible = false
 		wait(0)
-		
+	
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 0
-		
+	
 	end 
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
+	script.Parent.MouseMoved:Connect(function()
+		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
+		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
+		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
+		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
+		wait(0)
+	
+		script.Parent.Parent.MiscUnder.BackgroundTransparency = 0
+	end)
 end
-coroutine.wrap(BRBGHLJ_fake_script)()
-local function BXVVIEF_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(WZRXL_fake_script)()
+local function HIBFKCD_fake_script() -- GetAllTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -655,8 +826,8 @@ local function BXVVIEF_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(BXVVIEF_fake_script)()
-local function YGCUWC_fake_script() -- DltTools.GuiClick_Script 
+coroutine.wrap(HIBFKCD_fake_script)()
+local function XZPH_fake_script() -- DltTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', DltTools)
 
 	function OnClicked() 
@@ -676,8 +847,8 @@ local function YGCUWC_fake_script() -- DltTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(YGCUWC_fake_script)()
-local function IULKL_fake_script() -- NoWanted.GuiClick_Script 
+coroutine.wrap(XZPH_fake_script)()
+local function QXJPFW_fake_script() -- NoWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', NoWanted)
 
 	function OnClicked() 
@@ -695,8 +866,8 @@ local function IULKL_fake_script() -- NoWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(IULKL_fake_script)()
-local function SRRZLHS_fake_script() -- AddWanted.GuiClick_Script 
+coroutine.wrap(QXJPFW_fake_script)()
+local function WRSM_fake_script() -- AddWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', AddWanted)
 
 	function OnClicked() 
@@ -714,8 +885,8 @@ local function SRRZLHS_fake_script() -- AddWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(SRRZLHS_fake_script)()
-local function NKQXTY_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(WRSM_fake_script)()
+local function XVVFRD_fake_script() -- TeleportToReactor.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -753,8 +924,8 @@ local function NKQXTY_fake_script() -- TeleportToReactor.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(NKQXTY_fake_script)()
-local function VISBWV_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
+coroutine.wrap(XVVFRD_fake_script)()
+local function MRYV_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToCardAccepter)
 
 	function OnClicked() 
@@ -792,8 +963,8 @@ local function VISBWV_fake_script() -- TeleportToCardAccepter.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(VISBWV_fake_script)()
-local function MILX_fake_script() -- TeleportToMiddle.GuiClick_Script 
+coroutine.wrap(MRYV_fake_script)()
+local function GULMF_fake_script() -- TeleportToMiddle.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToMiddle)
 
 	function OnClicked() 
@@ -831,8 +1002,8 @@ local function MILX_fake_script() -- TeleportToMiddle.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(MILX_fake_script)()
-local function JJOIX_fake_script() -- TeleportToSCP.GuiClick_Script 
+coroutine.wrap(GULMF_fake_script)()
+local function FZKAS_fake_script() -- TeleportToSCP.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToSCP)
 
 	function OnClicked() 
@@ -870,8 +1041,30 @@ local function JJOIX_fake_script() -- TeleportToSCP.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(JJOIX_fake_script)()
-local function UPMCWOL_fake_script() -- FN.Notify 
+coroutine.wrap(FZKAS_fake_script)()
+local function COTEHW_fake_script() -- Level.GuiClick_Script 
+	local script = Instance.new('LocalScript', Level)
+
+	wait(2)
+	script.Parent.Changed:Connect(function()
+		local lvl = game.Players.LocalPlayer.PlayerValues:WaitForChild("Level")
+		wait(3)
+	
+		lvl.Value = script.Parent.Text
+	end)
+end
+coroutine.wrap(COTEHW_fake_script)()
+local function NDFL_fake_script() -- Speed.GuiClick_Script 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.Changed:Connect(function()
+		script.Parent.Speed.Value = script.Parent.Text
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Speed.Value
+		game.Players.LocalPlayer.PlayerValues.WalkSpeed = script.Parent.Speed.Value
+	end)
+end
+coroutine.wrap(NDFL_fake_script)()
+local function OYLE_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
 
 	
@@ -887,4 +1080,4 @@ local function UPMCWOL_fake_script() -- FN.Notify
 	script.Parent.Main.Visible = true
 	
 end
-coroutine.wrap(UPMCWOL_fake_script)()
+coroutine.wrap(OYLE_fake_script)()
