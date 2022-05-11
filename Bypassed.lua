@@ -634,13 +634,13 @@ UICorner_2.Parent = Speed
 
 -- Scripts:
 
-local function FEWYRZV_fake_script() -- FN.Namer 
+local function VZRNEEG_fake_script() -- FN.Namer 
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
 end
-coroutine.wrap(FEWYRZV_fake_script)()
-local function IOUX_fake_script() -- Main.Drag 
+coroutine.wrap(VZRNEEG_fake_script)()
+local function TZJM_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -681,14 +681,14 @@ local function IOUX_fake_script() -- Main.Drag
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(IOUX_fake_script)()
-local function PUWAF_fake_script() -- Hub.LocalScript 
+coroutine.wrap(TZJM_fake_script)()
+local function EVOJTZ_fake_script() -- Hub.LocalScript 
 	local script = Instance.new('LocalScript', Hub)
 
 	script.Parent.Text = "Hub V"..script.Parent.Parent.Parent.Parent.Version.Value..""
 end
-coroutine.wrap(PUWAF_fake_script)()
-local function VMTXHJ_fake_script() -- MainGame.GuiClick_Script 
+coroutine.wrap(EVOJTZ_fake_script)()
+local function UGUGDBW_fake_script() -- MainGame.GuiClick_Script 
 	local script = Instance.new('LocalScript', MainGame)
 
 	function OnClicked() 
@@ -719,8 +719,8 @@ local function VMTXHJ_fake_script() -- MainGame.GuiClick_Script
 		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
 	end)
 end
-coroutine.wrap(VMTXHJ_fake_script)()
-local function JHYLVU_fake_script() -- ESP.GuiClick_Script 
+coroutine.wrap(UGUGDBW_fake_script)()
+local function SCLDQB_fake_script() -- ESP.GuiClick_Script 
 	local script = Instance.new('LocalScript', ESP)
 
 	function OnClicked() 
@@ -748,8 +748,8 @@ local function JHYLVU_fake_script() -- ESP.GuiClick_Script
 		script.Parent.Parent.ESPUnder.BackgroundTransparency = 0
 	end)
 end
-coroutine.wrap(JHYLVU_fake_script)()
-local function MCPU_fake_script() -- Aimbot.GuiClick_Script 
+coroutine.wrap(SCLDQB_fake_script)()
+local function RYXTRK_fake_script() -- Aimbot.GuiClick_Script 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	function OnClicked() 
@@ -777,8 +777,8 @@ local function MCPU_fake_script() -- Aimbot.GuiClick_Script
 		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 0
 	end)
 end
-coroutine.wrap(MCPU_fake_script)()
-local function LBDX_fake_script() -- Misc.GuiClick_Script 
+coroutine.wrap(RYXTRK_fake_script)()
+local function LMXKM_fake_script() -- Misc.GuiClick_Script 
 	local script = Instance.new('LocalScript', Misc)
 
 	function OnClicked() 
@@ -806,8 +806,8 @@ local function LBDX_fake_script() -- Misc.GuiClick_Script
 		script.Parent.Parent.MiscUnder.BackgroundTransparency = 0
 	end)
 end
-coroutine.wrap(LBDX_fake_script)()
-local function MPFFSKG_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(LMXKM_fake_script)()
+local function OHJCM_fake_script() -- GetAllTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -827,8 +827,8 @@ local function MPFFSKG_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(MPFFSKG_fake_script)()
-local function LUBQKB_fake_script() -- DltTools.GuiClick_Script 
+coroutine.wrap(OHJCM_fake_script)()
+local function WNANL_fake_script() -- DltTools.GuiClick_Script 
 	local script = Instance.new('LocalScript', DltTools)
 
 	function OnClicked() 
@@ -848,8 +848,8 @@ local function LUBQKB_fake_script() -- DltTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(LUBQKB_fake_script)()
-local function JLRKA_fake_script() -- NoWanted.GuiClick_Script 
+coroutine.wrap(WNANL_fake_script)()
+local function WFRQMO_fake_script() -- NoWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', NoWanted)
 
 	function OnClicked() 
@@ -867,8 +867,8 @@ local function JLRKA_fake_script() -- NoWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(JLRKA_fake_script)()
-local function DEXZKEX_fake_script() -- AddWanted.GuiClick_Script 
+coroutine.wrap(WFRQMO_fake_script)()
+local function PPCN_fake_script() -- AddWanted.GuiClick_Script 
 	local script = Instance.new('LocalScript', AddWanted)
 
 	function OnClicked() 
@@ -886,8 +886,8 @@ local function DEXZKEX_fake_script() -- AddWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(DEXZKEX_fake_script)()
-local function JFXRL_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(PPCN_fake_script)()
+local function JCAJKCW_fake_script() -- TeleportToReactor.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -925,8 +925,8 @@ local function JFXRL_fake_script() -- TeleportToReactor.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(JFXRL_fake_script)()
-local function HYEVK_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
+coroutine.wrap(JCAJKCW_fake_script)()
+local function JZAZU_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToCardAccepter)
 
 	function OnClicked() 
@@ -964,8 +964,8 @@ local function HYEVK_fake_script() -- TeleportToCardAccepter.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(HYEVK_fake_script)()
-local function CJQWXPT_fake_script() -- TeleportToMiddle.GuiClick_Script 
+coroutine.wrap(JZAZU_fake_script)()
+local function VOTHZVI_fake_script() -- TeleportToMiddle.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToMiddle)
 
 	function OnClicked() 
@@ -1003,8 +1003,8 @@ local function CJQWXPT_fake_script() -- TeleportToMiddle.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(CJQWXPT_fake_script)()
-local function HBSDU_fake_script() -- TeleportToSCP.GuiClick_Script 
+coroutine.wrap(VOTHZVI_fake_script)()
+local function YWNYVZ_fake_script() -- TeleportToSCP.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToSCP)
 
 	function OnClicked() 
@@ -1042,8 +1042,8 @@ local function HBSDU_fake_script() -- TeleportToSCP.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(HBSDU_fake_script)()
-local function NJXWRNE_fake_script() -- Level.GuiClick_Script 
+coroutine.wrap(YWNYVZ_fake_script)()
+local function UENR_fake_script() -- Level.GuiClick_Script 
 	local script = Instance.new('LocalScript', Level)
 
 	wait(2)
@@ -1054,8 +1054,8 @@ local function NJXWRNE_fake_script() -- Level.GuiClick_Script
 		lvl.Value = script.Parent.Text
 	end)
 end
-coroutine.wrap(NJXWRNE_fake_script)()
-local function LKMXNRN_fake_script() -- Speed.GuiClick_Script 
+coroutine.wrap(UENR_fake_script)()
+local function TOOTIZ_fake_script() -- Speed.GuiClick_Script 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.Parent.Changed:Connect(function()
@@ -1064,8 +1064,8 @@ local function LKMXNRN_fake_script() -- Speed.GuiClick_Script
 		game.Players.LocalPlayer.PlayerValues.WalkSpeed = script.Parent.Speed.Value
 	end)
 end
-coroutine.wrap(LKMXNRN_fake_script)()
-local function XGEWOM_fake_script() -- FN.Notify 
+coroutine.wrap(TOOTIZ_fake_script)()
+local function QXYV_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
 
 	
@@ -1083,4 +1083,4 @@ local function XGEWOM_fake_script() -- FN.Notify
 		end
 	
 end
-coroutine.wrap(XGEWOM_fake_script)()
+coroutine.wrap(QXYV_fake_script)()
