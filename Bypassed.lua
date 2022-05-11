@@ -1061,7 +1061,7 @@ end
 coroutine.wrap(UTMIWHL_fake_script)()
 local function QJPMD_fake_script() -- FN.Notify 
 	local script = Instance.new('LocalScript', FN)
-
+wait(0.5)
 	
 		wait(1)
 	
@@ -1078,6 +1078,7 @@ local function QJPMD_fake_script() -- FN.Notify
 end
 coroutine.wrap(QJPMD_fake_script)()
 local function DDGKB_fake_script() -- FN.Namer 
+	wait(1)
 	local script = Instance.new('LocalScript', FN)
 
 	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
