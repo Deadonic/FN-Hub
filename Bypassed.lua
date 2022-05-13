@@ -3,33 +3,24 @@
 
 -- Instances:
 
-local FN = Instance.new("ScreenGui")
+local Lithium = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local TitleHH = Instance.new("Frame")
 local UIGradient_2 = Instance.new("UIGradient")
-local FN_2 = Instance.new("TextLabel")
+local FN = Instance.new("TextLabel")
 local UIGradient_3 = Instance.new("UIGradient")
 local Hub = Instance.new("TextLabel")
 local FrameTitleTop = Instance.new("Frame")
-local AddOther = Instance.new("Frame")
-local MainGame = Instance.new("TextButton")
+local GameNameHH = Instance.new("Frame")
+local GameName = Instance.new("TextButton")
 local UIGradient_4 = Instance.new("UIGradient")
-local ESP = Instance.new("TextButton")
-local UIGradient_5 = Instance.new("UIGradient")
-local Aimbot = Instance.new("TextButton")
-local UIGradient_6 = Instance.new("UIGradient")
-local Misc = Instance.new("TextButton")
-local UIGradient_7 = Instance.new("UIGradient")
-local ClickedUnder = Instance.new("Frame")
-local ESPUnder = Instance.new("Frame")
-local AnimbotUnder = Instance.new("Frame")
-local MiscUnder = Instance.new("Frame")
-local LocalHax = Instance.new("Frame")
 local Other = Instance.new("Frame")
-local UIGradient_8 = Instance.new("UIGradient")
-local ThingTitle = Instance.new("TextLabel")
+local LocalHax = Instance.new("Frame")
 local Other_2 = Instance.new("Frame")
+local UIGradient_5 = Instance.new("UIGradient")
+local ThingTitle = Instance.new("TextLabel")
+local Other_3 = Instance.new("Frame")
 local Exploits = Instance.new("Folder")
 local GetAllTools = Instance.new("TextButton")
 local GetAllGunsTitle = Instance.new("TextLabel")
@@ -37,13 +28,11 @@ local DltTools = Instance.new("TextButton")
 local GetAllGunsTitle_2 = Instance.new("TextLabel")
 local NoWanted = Instance.new("TextButton")
 local GetAllGunsTitle_3 = Instance.new("TextLabel")
-local AddWanted = Instance.new("TextButton")
-local GetAllGunsTitle_4 = Instance.new("TextLabel")
 local ServerHax = Instance.new("Frame")
-local Other_3 = Instance.new("Frame")
-local UIGradient_9 = Instance.new("UIGradient")
-local ThingTitle_2 = Instance.new("TextLabel")
 local Other_4 = Instance.new("Frame")
+local UIGradient_6 = Instance.new("UIGradient")
+local ThingTitle_2 = Instance.new("TextLabel")
+local Other_5 = Instance.new("Frame")
 local Exploits_2 = Instance.new("Folder")
 local TeleportToReactor = Instance.new("TextButton")
 local ReactorTitle = Instance.new("TextLabel")
@@ -53,36 +42,41 @@ local TeleportToMiddle = Instance.new("TextButton")
 local ReactorTitle_3 = Instance.new("TextLabel")
 local TeleportToSCP = Instance.new("TextButton")
 local ReactorTitle_4 = Instance.new("TextLabel")
-local PlayerHax = Instance.new("Frame")
-local Other_5 = Instance.new("Frame")
-local UIGradient_10 = Instance.new("UIGradient")
-local ThingTitle_3 = Instance.new("TextLabel")
+local BypassedHax = Instance.new("Frame")
 local Other_6 = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local ThingTitle_3 = Instance.new("TextLabel")
+local Other_7 = Instance.new("Frame")
 local Exploits_3 = Instance.new("Folder")
+local PlayerHax = Instance.new("Frame")
+local Other_8 = Instance.new("Frame")
+local UIGradient_8 = Instance.new("UIGradient")
+local ThingTitle_4 = Instance.new("TextLabel")
+local Other_9 = Instance.new("Frame")
+local Exploits_4 = Instance.new("Folder")
 local Level = Instance.new("TextBox")
 local ReactorTitle_5 = Instance.new("TextLabel")
-local UIGradient_11 = Instance.new("UIGradient")
+local UIGradient_9 = Instance.new("UIGradient")
 local UICorner = Instance.new("UICorner")
 local Speed = Instance.new("TextBox")
 local ReactorTitle_6 = Instance.new("TextLabel")
-local UIGradient_12 = Instance.new("UIGradient")
+local UIGradient_10 = Instance.new("UIGradient")
 local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
-FN.Name = "FN"
-FN.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-FN.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-FN.ResetOnSpawn = false
+Lithium.Name = "Lithium"
+Lithium.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Lithium.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Lithium.ResetOnSpawn = false
 
 Main.Name = "Main"
-Main.Parent = FN
+Main.Parent = Lithium
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BorderSizePixel = 3
-Main.Position = UDim2.new(0.0280970894, 0, 0.116805725, 0)
+Main.Position = UDim2.new(0.0280970894, 790, 0.116805725, -28)
 Main.Size = UDim2.new(0, 427, 0, 643)
 Main.Visible = false
-Main.ZIndex = 2
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(52, 52, 52)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(58, 58, 58)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(49, 49, 49))}
 UIGradient.Parent = Main
@@ -97,28 +91,28 @@ UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_2.Rotation = 90
 UIGradient_2.Parent = TitleHH
 
-FN_2.Name = "FN"
-FN_2.Parent = TitleHH
-FN_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FN_2.BackgroundTransparency = 1.000
-FN_2.Position = UDim2.new(-0.139215693, 0, -0.100000001, 0)
-FN_2.Size = UDim2.new(0, 180, 0, 22)
-FN_2.Font = Enum.Font.Code
-FN_2.Text = "FN"
-FN_2.TextColor3 = Color3.fromRGB(167, 255, 157)
-FN_2.TextScaled = true
-FN_2.TextSize = 14.000
-FN_2.TextWrapped = true
+FN.Name = "FN"
+FN.Parent = TitleHH
+FN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FN.BackgroundTransparency = 1.000
+FN.Position = UDim2.new(-0.113454565, 0, -0.100000001, 0)
+FN.Size = UDim2.new(0, 180, 0, 22)
+FN.Font = Enum.Font.Code
+FN.Text = "Lithium"
+FN.TextColor3 = Color3.fromRGB(167, 255, 157)
+FN.TextScaled = true
+FN.TextSize = 14.000
+FN.TextWrapped = true
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_3.Rotation = 90
-UIGradient_3.Parent = FN_2
+UIGradient_3.Parent = FN
 
 Hub.Name = "Hub"
 Hub.Parent = TitleHH
 Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Hub.BackgroundTransparency = 1.000
-Hub.Position = UDim2.new(-0.0019607842, 0, -0.100000001, 0)
+Hub.Position = UDim2.new(0.0870321915, 0, -0.100000001, 0)
 Hub.Size = UDim2.new(0, 180, 0, 22)
 Hub.Font = Enum.Font.Code
 Hub.Text = "Hub V2.4"
@@ -134,111 +128,36 @@ FrameTitleTop.BorderSizePixel = 0
 FrameTitleTop.Position = UDim2.new(-0.00176565989, 0, 0.0341757126, 0)
 FrameTitleTop.Size = UDim2.new(0, 427, 0, 1)
 
-AddOther.Name = "AddOther"
-AddOther.Parent = Main
-AddOther.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
-AddOther.BackgroundTransparency = 1.000
-AddOther.Position = UDim2.new(-0.00196077232, 0, 0.0373250395, 0)
-AddOther.Size = UDim2.new(0, 427, 0, 20)
+GameNameHH.Name = "GameNameHH"
+GameNameHH.Parent = Main
+GameNameHH.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+GameNameHH.BackgroundTransparency = 1.000
+GameNameHH.Position = UDim2.new(-0.00196078443, 0, 0.0373250395, 0)
+GameNameHH.Size = UDim2.new(0, 510, 0, 20)
 
-MainGame.Name = "MainGame"
-MainGame.Parent = AddOther
-MainGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainGame.BackgroundTransparency = 1.000
-MainGame.Position = UDim2.new(0.121351182, 0, -0.150000006, 0)
-MainGame.Size = UDim2.new(0, 81, 0, 22)
-MainGame.Font = Enum.Font.Code
-MainGame.Text = "Pro Border"
-MainGame.TextColor3 = Color3.fromRGB(167, 255, 157)
-MainGame.TextScaled = true
-MainGame.TextSize = 14.000
-MainGame.TextWrapped = true
+GameName.Name = "GameName"
+GameName.Parent = GameNameHH
+GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName.BackgroundTransparency = 1.000
+GameName.Position = UDim2.new(-0.0706862807, 0, -0.150000006, 0)
+GameName.Size = UDim2.new(0, 180, 0, 22)
+GameName.Font = Enum.Font.SourceSans
+GameName.Text = "Pro Border"
+GameName.TextColor3 = Color3.fromRGB(167, 255, 157)
+GameName.TextScaled = true
+GameName.TextSize = 14.000
+GameName.TextWrapped = true
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_4.Rotation = 90
-UIGradient_4.Parent = MainGame
+UIGradient_4.Parent = GameName
 
-ESP.Name = "ESP"
-ESP.Parent = AddOther
-ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESP.BackgroundTransparency = 1.000
-ESP.Position = UDim2.new(0.311344534, 0, -0.100000001, 0)
-ESP.Size = UDim2.new(0, 57, 0, 22)
-ESP.Font = Enum.Font.Code
-ESP.Text = "ESP"
-ESP.TextColor3 = Color3.fromRGB(167, 255, 157)
-ESP.TextScaled = true
-ESP.TextSize = 14.000
-ESP.TextWrapped = true
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Rotation = 90
-UIGradient_5.Parent = ESP
-
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = AddOther
-Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Aimbot.BackgroundTransparency = 1.000
-Aimbot.Position = UDim2.new(0.44717592, 0, -0.100000001, 0)
-Aimbot.Size = UDim2.new(0, 77, 0, 22)
-Aimbot.Font = Enum.Font.Code
-Aimbot.Text = "Aimbot"
-Aimbot.TextColor3 = Color3.fromRGB(167, 255, 157)
-Aimbot.TextScaled = true
-Aimbot.TextSize = 14.000
-Aimbot.TextWrapped = true
-
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Rotation = 90
-UIGradient_6.Parent = Aimbot
-
-Misc.Name = "Misc"
-Misc.Parent = AddOther
-Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Misc.BackgroundTransparency = 1.000
-Misc.Position = UDim2.new(0.629547954, 0, -0.100000001, 0)
-Misc.Size = UDim2.new(0, 90, 0, 22)
-Misc.Font = Enum.Font.Code
-Misc.Text = "Misc"
-Misc.TextColor3 = Color3.fromRGB(167, 255, 157)
-Misc.TextScaled = true
-Misc.TextSize = 14.000
-Misc.TextWrapped = true
-
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Rotation = 90
-UIGradient_7.Parent = Misc
-
-ClickedUnder.Name = "ClickedUnder"
-ClickedUnder.Parent = AddOther
-ClickedUnder.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-ClickedUnder.BorderSizePixel = 0
-ClickedUnder.Position = UDim2.new(0.140384331, 0, 0.865279913, 0)
-ClickedUnder.Size = UDim2.new(0, 58, 0, 1)
-
-ESPUnder.Name = "ESPUnder"
-ESPUnder.Parent = AddOther
-ESPUnder.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-ESPUnder.BackgroundTransparency = 1.000
-ESPUnder.BorderSizePixel = 0
-ESPUnder.Position = UDim2.new(0.311344534, 0, 0.915279984, 0)
-ESPUnder.Size = UDim2.new(0, 58, 0, 1)
-
-AnimbotUnder.Name = "AnimbotUnder"
-AnimbotUnder.Parent = AddOther
-AnimbotUnder.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-AnimbotUnder.BackgroundTransparency = 1.000
-AnimbotUnder.BorderSizePixel = 0
-AnimbotUnder.Position = UDim2.new(0.472937018, 0, 0.915279984, 0)
-AnimbotUnder.Size = UDim2.new(0, 58, 0, 1)
-
-MiscUnder.Name = "MiscUnder"
-MiscUnder.Parent = AddOther
-MiscUnder.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-MiscUnder.BackgroundTransparency = 1.000
-MiscUnder.BorderSizePixel = 0
-MiscUnder.Position = UDim2.new(0.664974511, 0, 0.965279996, 0)
-MiscUnder.Size = UDim2.new(0, 58, 0, 1)
+Other.Name = "Other"
+Other.Parent = Main
+Other.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other.BorderSizePixel = 0
+Other.Position = UDim2.new(0.0139206238, 0, 0.065279901, 0)
+Other.Size = UDim2.new(0, 91, 0, 1)
 
 LocalHax.Name = "LocalHax"
 LocalHax.Parent = Main
@@ -247,16 +166,16 @@ LocalHax.BorderSizePixel = 3
 LocalHax.Position = UDim2.new(0.0137254912, 0, 0.102643862, 0)
 LocalHax.Size = UDim2.new(0, 199, 0, 361)
 
-Other.Name = "Other"
-Other.Parent = LocalHax
-Other.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other.BorderSizePixel = 0
-Other.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
-Other.Size = UDim2.new(0, 11, 0, 1)
+Other_2.Name = "Other"
+Other_2.Parent = LocalHax
+Other_2.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_2.BorderSizePixel = 0
+Other_2.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
+Other_2.Size = UDim2.new(0, 11, 0, 1)
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_8.Rotation = 90
-UIGradient_8.Parent = LocalHax
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Rotation = 90
+UIGradient_5.Parent = LocalHax
 
 ThingTitle.Name = "ThingTitle"
 ThingTitle.Parent = LocalHax
@@ -271,12 +190,12 @@ ThingTitle.TextScaled = true
 ThingTitle.TextSize = 14.000
 ThingTitle.TextWrapped = true
 
-Other_2.Name = "Other"
-Other_2.Parent = LocalHax
-Other_2.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other_2.BorderSizePixel = 0
-Other_2.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
-Other_2.Size = UDim2.new(0, 72, 0, 1)
+Other_3.Name = "Other"
+Other_3.Parent = LocalHax
+Other_3.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_3.BorderSizePixel = 0
+Other_3.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
+Other_3.Size = UDim2.new(0, 72, 0, 1)
 
 Exploits.Name = "Exploits"
 Exploits.Parent = LocalHax
@@ -356,31 +275,6 @@ GetAllGunsTitle_3.TextScaled = true
 GetAllGunsTitle_3.TextSize = 14.000
 GetAllGunsTitle_3.TextWrapped = true
 
-AddWanted.Name = "AddWanted"
-AddWanted.Parent = Exploits
-AddWanted.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-AddWanted.Position = UDim2.new(0.0199999996, 0, 0.230000004, 0)
-AddWanted.Size = UDim2.new(0, 16, 0, 16)
-AddWanted.Font = Enum.Font.SourceSans
-AddWanted.Text = " "
-AddWanted.TextColor3 = Color3.fromRGB(0, 0, 0)
-AddWanted.TextScaled = true
-AddWanted.TextSize = 14.000
-AddWanted.TextWrapped = true
-
-GetAllGunsTitle_4.Name = "GetAllGunsTitle"
-GetAllGunsTitle_4.Parent = AddWanted
-GetAllGunsTitle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GetAllGunsTitle_4.BackgroundTransparency = 1.000
-GetAllGunsTitle_4.Position = UDim2.new(-0.66936028, 0, -0.0215951167, 0)
-GetAllGunsTitle_4.Size = UDim2.new(0, 160, 0, 16)
-GetAllGunsTitle_4.Font = Enum.Font.Code
-GetAllGunsTitle_4.Text = "Add Wanted"
-GetAllGunsTitle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-GetAllGunsTitle_4.TextScaled = true
-GetAllGunsTitle_4.TextSize = 14.000
-GetAllGunsTitle_4.TextWrapped = true
-
 ServerHax.Name = "ServerHax"
 ServerHax.Parent = Main
 ServerHax.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
@@ -388,16 +282,16 @@ ServerHax.BorderSizePixel = 3
 ServerHax.Position = UDim2.new(0.506596148, 0, 0.102555215, 0)
 ServerHax.Size = UDim2.new(0, 199, 0, 361)
 
-Other_3.Name = "Other"
-Other_3.Parent = ServerHax
-Other_3.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other_3.BorderSizePixel = 0
-Other_3.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
-Other_3.Size = UDim2.new(0, 11, 0, 1)
+Other_4.Name = "Other"
+Other_4.Parent = ServerHax
+Other_4.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_4.BorderSizePixel = 0
+Other_4.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
+Other_4.Size = UDim2.new(0, 11, 0, 1)
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Rotation = 90
-UIGradient_9.Parent = ServerHax
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Rotation = 90
+UIGradient_6.Parent = ServerHax
 
 ThingTitle_2.Name = "ThingTitle"
 ThingTitle_2.Parent = ServerHax
@@ -412,12 +306,12 @@ ThingTitle_2.TextScaled = true
 ThingTitle_2.TextSize = 14.000
 ThingTitle_2.TextWrapped = true
 
-Other_4.Name = "Other"
-Other_4.Parent = ServerHax
-Other_4.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other_4.BorderSizePixel = 0
-Other_4.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
-Other_4.Size = UDim2.new(0, 72, 0, 1)
+Other_5.Name = "Other"
+Other_5.Parent = ServerHax
+Other_5.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
+Other_5.BorderSizePixel = 0
+Other_5.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
+Other_5.Size = UDim2.new(0, 72, 0, 1)
 
 Exploits_2.Name = "Exploits"
 Exploits_2.Parent = ServerHax
@@ -522,6 +416,47 @@ ReactorTitle_4.TextScaled = true
 ReactorTitle_4.TextSize = 14.000
 ReactorTitle_4.TextWrapped = true
 
+BypassedHax.Name = "BypassedHax"
+BypassedHax.Parent = Main
+BypassedHax.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+BypassedHax.BorderSizePixel = 3
+BypassedHax.Position = UDim2.new(0.0124509633, 0, 0.677982867, 0)
+BypassedHax.Size = UDim2.new(0, 199, 0, 200)
+
+Other_6.Name = "Other"
+Other_6.Parent = BypassedHax
+Other_6.BackgroundColor3 = Color3.fromRGB(167, 255, 157)
+Other_6.BorderSizePixel = 0
+Other_6.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
+Other_6.Size = UDim2.new(0, 11, 0, 1)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Rotation = 90
+UIGradient_7.Parent = BypassedHax
+
+ThingTitle_3.Name = "ThingTitle"
+ThingTitle_3.Parent = BypassedHax
+ThingTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_3.BackgroundTransparency = 1.000
+ThingTitle_3.Position = UDim2.new(0.048290465, 0, -0.0383471921, 0)
+ThingTitle_3.Size = UDim2.new(0, 132, 0, 16)
+ThingTitle_3.Font = Enum.Font.Code
+ThingTitle_3.Text = "Bypassed Exploits"
+ThingTitle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_3.TextScaled = true
+ThingTitle_3.TextSize = 14.000
+ThingTitle_3.TextWrapped = true
+
+Other_7.Name = "Other"
+Other_7.Parent = BypassedHax
+Other_7.BackgroundColor3 = Color3.fromRGB(167, 255, 157)
+Other_7.BorderSizePixel = 0
+Other_7.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
+Other_7.Size = UDim2.new(0, 72, 0, 1)
+
+Exploits_3.Name = "Exploits"
+Exploits_3.Parent = BypassedHax
+
 PlayerHax.Name = "PlayerHax"
 PlayerHax.Parent = Main
 PlayerHax.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
@@ -529,42 +464,42 @@ PlayerHax.BorderSizePixel = 3
 PlayerHax.Position = UDim2.new(0.506596148, 0, 0.679538071, 0)
 PlayerHax.Size = UDim2.new(0, 199, 0, 200)
 
-Other_5.Name = "Other"
-Other_5.Parent = PlayerHax
-Other_5.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other_5.BorderSizePixel = 0
-Other_5.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
-Other_5.Size = UDim2.new(0, 11, 0, 1)
+Other_8.Name = "Other"
+Other_8.Parent = PlayerHax
+Other_8.BackgroundColor3 = Color3.fromRGB(167, 255, 157)
+Other_8.BorderSizePixel = 0
+Other_8.Position = UDim2.new(-0.00176557223, 0, -0.00183536601, 0)
+Other_8.Size = UDim2.new(0, 11, 0, 1)
 
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Rotation = 90
-UIGradient_10.Parent = PlayerHax
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Rotation = 90
+UIGradient_8.Parent = PlayerHax
 
-ThingTitle_3.Name = "ThingTitle"
-ThingTitle_3.Parent = PlayerHax
-ThingTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ThingTitle_3.BackgroundTransparency = 1.000
-ThingTitle_3.Position = UDim2.new(0.048290465, 0, -0.0383471921, 0)
-ThingTitle_3.Size = UDim2.new(0, 132, 0, 16)
-ThingTitle_3.Font = Enum.Font.Code
-ThingTitle_3.Text = "Player Exploits"
-ThingTitle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-ThingTitle_3.TextScaled = true
-ThingTitle_3.TextSize = 14.000
-ThingTitle_3.TextWrapped = true
+ThingTitle_4.Name = "ThingTitle"
+ThingTitle_4.Parent = PlayerHax
+ThingTitle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_4.BackgroundTransparency = 1.000
+ThingTitle_4.Position = UDim2.new(0.048290465, 0, -0.0383471921, 0)
+ThingTitle_4.Size = UDim2.new(0, 132, 0, 16)
+ThingTitle_4.Font = Enum.Font.Code
+ThingTitle_4.Text = "Player Exploits"
+ThingTitle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThingTitle_4.TextScaled = true
+ThingTitle_4.TextSize = 14.000
+ThingTitle_4.TextWrapped = true
 
-Other_6.Name = "Other"
-Other_6.Parent = PlayerHax
-Other_6.BackgroundColor3 = Color3.fromRGB(121, 255, 155)
-Other_6.BorderSizePixel = 0
-Other_6.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
-Other_6.Size = UDim2.new(0, 72, 0, 1)
+Other_9.Name = "Other"
+Other_9.Parent = PlayerHax
+Other_9.BackgroundColor3 = Color3.fromRGB(167, 255, 157)
+Other_9.BorderSizePixel = 0
+Other_9.Position = UDim2.new(0.636425376, 0, 0.000934717071, 0)
+Other_9.Size = UDim2.new(0, 72, 0, 1)
 
-Exploits_3.Name = "Exploits"
-Exploits_3.Parent = PlayerHax
+Exploits_4.Name = "Exploits"
+Exploits_4.Parent = PlayerHax
 
 Level.Name = "Level"
-Level.Parent = Exploits_3
+Level.Parent = Exploits_4
 Level.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 Level.BorderSizePixel = 3
 Level.Position = UDim2.new(0.0653266311, 0, 0.623749971, 0)
@@ -590,15 +525,15 @@ ReactorTitle_5.TextScaled = true
 ReactorTitle_5.TextSize = 14.000
 ReactorTitle_5.TextWrapped = true
 
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_11.Rotation = 90
-UIGradient_11.Parent = Level
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Rotation = 90
+UIGradient_9.Parent = Level
 
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = Level
 
 Speed.Name = "Speed"
-Speed.Parent = Exploits_3
+Speed.Parent = Exploits_4
 Speed.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 Speed.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Speed.BorderSizePixel = 3
@@ -625,183 +560,28 @@ ReactorTitle_6.TextScaled = true
 ReactorTitle_6.TextSize = 14.000
 ReactorTitle_6.TextWrapped = true
 
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_12.Rotation = 90
-UIGradient_12.Parent = Speed
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.19, Color3.fromRGB(157, 157, 157)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(143, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Rotation = 90
+UIGradient_10.Parent = Speed
 
 UICorner_2.CornerRadius = UDim.new(0, 5)
 UICorner_2.Parent = Speed
 
 -- Scripts:
 
-local function VEFIZU_fake_script() -- Main.Drag 
-	local script = Instance.new('LocalScript', Main)
-
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end
-coroutine.wrap(VEFIZU_fake_script)()
-local function ATQMEHR_fake_script() -- Hub.LocalScript 
+local function WUFML_fake_script() -- Hub.LocalScript 
 	local script = Instance.new('LocalScript', Hub)
 
-	script.Parent.Text = "Hub V"..script.Parent.Parent.Parent.Parent.Version.Value..""
+	script.Parent.Text = "Hub V"..script.Parent.Version.Value..""
 end
-coroutine.wrap(ATQMEHR_fake_script)()
-local function TIPU_fake_script() -- MainGame.GuiClick_Script 
-	local script = Instance.new('LocalScript', MainGame)
+coroutine.wrap(WUFML_fake_script)()
+local function SDMOP_fake_script() -- GameName.Script 
+	local script = Instance.new('Script', GameName)
 
-	function OnClicked() 
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		script.Parent.Parent.Parent.ServerHax.Visible = false
-		script.Parent.Parent.Parent.LocalHax.Visible = false
-		script.Parent.Parent.Parent.PlayerHax.Visible = false
-		wait(0)
-	
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
-		script.Parent.Parent.Parent.ServerHax.Visible = true
-		script.Parent.Parent.Parent.LocalHax.Visible = true
-		script.Parent.Parent.Parent.PlayerHax.Visible = true
-	
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-	script.Parent.MouseMoved:Connect(function()
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		wait(0)
-	
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 0
-	end)
+	script.Parent.Text = game.Name
 end
-coroutine.wrap(TIPU_fake_script)()
-local function XBANKBI_fake_script() -- ESP.GuiClick_Script 
-	local script = Instance.new('LocalScript', ESP)
-
-	function OnClicked() 
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		script.Parent.Parent.Parent.ServerHax.Visible = false
-		script.Parent.Parent.Parent.LocalHax.Visible = false
-		script.Parent.Parent.Parent.PlayerHax.Visible = false
-		wait(0)
-		
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 0
-		
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-	script.Parent.MouseMoved:Connect(function()
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		wait(0)
-	
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 0
-	end)
-end
-coroutine.wrap(XBANKBI_fake_script)()
-local function RUEBCJ_fake_script() -- Aimbot.GuiClick_Script 
-	local script = Instance.new('LocalScript', Aimbot)
-
-	function OnClicked() 
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		script.Parent.Parent.Parent.ServerHax.Visible = false
-		script.Parent.Parent.Parent.LocalHax.Visible = false
-		script.Parent.Parent.Parent.PlayerHax.Visible = false
-		wait(0)
-	
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 0
-	
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-	script.Parent.MouseMoved:Connect(function()
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		wait(0)
-	
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 0
-	end)
-end
-coroutine.wrap(RUEBCJ_fake_script)()
-local function RJBQIUQ_fake_script() -- Misc.GuiClick_Script 
-	local script = Instance.new('LocalScript', Misc)
-
-	function OnClicked() 
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		script.Parent.Parent.Parent.ServerHax.Visible = false
-		script.Parent.Parent.Parent.LocalHax.Visible = false
-		script.Parent.Parent.Parent.PlayerHax.Visible = false
-		wait(0)
-	
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 0
-	
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-	script.Parent.MouseMoved:Connect(function()
-		script.Parent.Parent.ClickedUnder.BackgroundTransparency = 1
-		script.Parent.Parent.ESPUnder.BackgroundTransparency = 1
-		script.Parent.Parent.AnimbotUnder.BackgroundTransparency = 1
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 1
-		wait(0)
-	
-		script.Parent.Parent.MiscUnder.BackgroundTransparency = 0
-	end)
-end
-coroutine.wrap(RJBQIUQ_fake_script)()
-local function SKXF_fake_script() -- GetAllTools.GuiClick_Script 
+coroutine.wrap(SDMOP_fake_script)()
+local function WSZOL_fake_script() -- GetAllTools.GUICLICK 
 	local script = Instance.new('LocalScript', GetAllTools)
 
 	function OnClicked() 
@@ -821,8 +601,8 @@ local function SKXF_fake_script() -- GetAllTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(SKXF_fake_script)()
-local function FYIW_fake_script() -- DltTools.GuiClick_Script 
+coroutine.wrap(WSZOL_fake_script)()
+local function DKBVFEU_fake_script() -- DltTools.GUICLICK 
 	local script = Instance.new('LocalScript', DltTools)
 
 	function OnClicked() 
@@ -842,8 +622,8 @@ local function FYIW_fake_script() -- DltTools.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(FYIW_fake_script)()
-local function ZTBP_fake_script() -- NoWanted.GuiClick_Script 
+coroutine.wrap(DKBVFEU_fake_script)()
+local function AKLS_fake_script() -- NoWanted.GUICLICK 
 	local script = Instance.new('LocalScript', NoWanted)
 
 	function OnClicked() 
@@ -861,27 +641,8 @@ local function ZTBP_fake_script() -- NoWanted.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(ZTBP_fake_script)()
-local function EROXRWB_fake_script() -- AddWanted.GuiClick_Script 
-	local script = Instance.new('LocalScript', AddWanted)
-
-	function OnClicked() 
-		script.Parent.BackgroundColor3 = Color3.new(0.654902, 1, 0.615686)
-		game.Players.LocalPlayer.PlayerValues.Wanted.Value = true
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Wanted Added";
-			Text = "Wanted has been Added to you.";
-			Icon = "http://www.roblox.com/asset/?id=84645430";
-			Duration = "0.3";
-		})
-		wait(0.5)
-		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-	end 
-	
-	script.Parent.MouseButton1Down:connect(OnClicked)
-end
-coroutine.wrap(EROXRWB_fake_script)()
-local function LREI_fake_script() -- TeleportToReactor.GuiClick_Script 
+coroutine.wrap(AKLS_fake_script)()
+local function UOOJI_fake_script() -- TeleportToReactor.LocalScript 
 	local script = Instance.new('LocalScript', TeleportToReactor)
 
 	function OnClicked() 
@@ -914,13 +675,13 @@ local function LREI_fake_script() -- TeleportToReactor.GuiClick_Script
 		})
 		wait(1.5)
 		script.Parent.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-		
+	
 	end 
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(LREI_fake_script)()
-local function PCVPP_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
+coroutine.wrap(UOOJI_fake_script)()
+local function ESGL_fake_script() -- TeleportToCardAccepter.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToCardAccepter)
 
 	function OnClicked() 
@@ -958,8 +719,8 @@ local function PCVPP_fake_script() -- TeleportToCardAccepter.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(PCVPP_fake_script)()
-local function TPNHV_fake_script() -- TeleportToMiddle.GuiClick_Script 
+coroutine.wrap(ESGL_fake_script)()
+local function ULUJF_fake_script() -- TeleportToMiddle.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToMiddle)
 
 	function OnClicked() 
@@ -997,8 +758,8 @@ local function TPNHV_fake_script() -- TeleportToMiddle.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(TPNHV_fake_script)()
-local function YFUBTI_fake_script() -- TeleportToSCP.GuiClick_Script 
+coroutine.wrap(ULUJF_fake_script)()
+local function AQYAZ_fake_script() -- TeleportToSCP.GuiClick_Script 
 	local script = Instance.new('LocalScript', TeleportToSCP)
 
 	function OnClicked() 
@@ -1036,8 +797,14 @@ local function YFUBTI_fake_script() -- TeleportToSCP.GuiClick_Script
 	
 	script.Parent.MouseButton1Down:connect(OnClicked)
 end
-coroutine.wrap(YFUBTI_fake_script)()
-local function IYDXK_fake_script() -- Level.GuiClick_Script 
+coroutine.wrap(AQYAZ_fake_script)()
+local function KEOZ_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	
+end
+coroutine.wrap(KEOZ_fake_script)()
+local function FPTZ_fake_script() -- Level.GuiClick_Script 
 	local script = Instance.new('LocalScript', Level)
 
 	wait(2)
@@ -1048,8 +815,8 @@ local function IYDXK_fake_script() -- Level.GuiClick_Script
 		lvl.Value = script.Parent.Text
 	end)
 end
-coroutine.wrap(IYDXK_fake_script)()
-local function CTDDZR_fake_script() -- Speed.GuiClick_Script 
+coroutine.wrap(FPTZ_fake_script)()
+local function QWWGXMW_fake_script() -- Speed.GuiClick_Script 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.Parent.Changed:Connect(function()
@@ -1058,28 +825,16 @@ local function CTDDZR_fake_script() -- Speed.GuiClick_Script
 		game.Players.LocalPlayer.PlayerValues.WalkSpeed = script.Parent.Speed.Value
 	end)
 end
-coroutine.wrap(CTDDZR_fake_script)()
-local function DNQLZ_fake_script() -- FN.Notify 
-	local script = Instance.new('LocalScript', FN)
+coroutine.wrap(QWWGXMW_fake_script)()
+local function FGYVVP_fake_script() -- Lithium.Notify 
+	local script = Instance.new('LocalScript', Lithium)
 
 	
-		wait(1)
-	
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Hax Loaded!!";
-			Text = "The Script is loading be patient.";
-			Icon = "http://www.roblox.com/asset/?id=6180352511";
-			Duration = "3";
-	})
-	wait(3.5)
-	
-		Main.Visible = true
-	
 end
-coroutine.wrap(DNQLZ_fake_script)()
-local function KODQG_fake_script() -- FN.Namer 
-	local script = Instance.new('LocalScript', FN)
+coroutine.wrap(FGYVVP_fake_script)()
+local function OJTCIDM_fake_script() -- Lithium.Namer 
+	local script = Instance.new('LocalScript', Lithium)
 
-	script.Parent.Name = "f"..math.random(4,20).."a"..math.random(7,20).."f"
+	
 end
-coroutine.wrap(KODQG_fake_script)()
+coroutine.wrap(OJTCIDM_fake_script)()
